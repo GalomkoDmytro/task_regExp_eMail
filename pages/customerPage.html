@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <title></title>
+      <link rel="stylesheet" type="text/css" href="../CSS/style.css">
+   </head>
+   <body>
+      <header>
+         <div class="row center">
+            <div class="column"><img src="../img/folder.png" alt="box" style="width:100%; max-width: 50px;"></div>
+            <div class="column">
+               <h1> Файловой хранилице v 0.01 (потеряй свои файлы красиво!;))</h1>
+            </div>
+            <div class="column"><img src="../img/folder.png" alt="box" style="width:100%; max-width: 50px;"></div>
+         </div>
+         <hr>
+         <p align="right">Вы вошли в ситсему как <b>Иванов Иван Иванович</b>. <a href="#">Выйти</a></p>
+      </header>
+      <section>
+         <aside>
+            <p><b>Можно загружать:</b></p>
+            <p>Zip (до 20Mb): 123</p>
+            <p>DOCX (до 40Mb): 1234</p>
+            <p>PPTX (до 50Mb): 2345мб</p>
+            <br>
+            <p><b>Использовано:</b></p>
+            <p>27.34 мб из 100 мб</p>
+         </aside>
+         <div id="content">
+            <div id="table_div" class="contente_node">
+               <table id="mytable">
+                  <tr>
+                     <th onclick="sortTable('fileName')">Файл</th>
+                     <th onclick="sortTable('fileSize')">Размер(kb)</th>
+                     <th onclick="sortTable('fileDate')">Дата и время</th>
+                     <th>Удалить</th>
+                  </tr>
+                  <tr>
+                     <td><a class="link_file" href="#">Это_архив_с_русским_именем.zip</a></td>
+                     <td>132.22</td>
+                     <td>2014.02.28 18:01:05</td>
+                     <td><a class="delete" href="#">Удалить</a></td>
+                  </tr>
+                  <tr>
+                     <td><a class="link_file" href="#">_www_app.zip</a></td>
+                     <td>132.45</td>
+                     <td>2014.02.28 18:24:54</td>
+                     <td><a class="delete" href="#">Удалить</a></td>
+                  </tr>
+                  <tr>
+                     <td><a class="link_file" href="#">Новая папка.зип</a></td>
+                     <td>123</td>
+                     <td>2014.02.28 18:24:55</td>
+                     <td><a class="delete" href="#">Удалить</a></td>
+                  </tr>
+               </table>
+            </div>
+            <div class="contente_node">
+               <p>Загрузить новый файл:</p>
+               <p> <input type="button" value="Выбрать"><input type="text"></p>
+               <p><input type="button" value="Загрузить"></p>
+            </div>
+            <div class="contente_node">
+               <p>Запросить с удалённого сервера:</p>
+               <p><input class="full_w" type="text"></p>
+               <p>Поместить в хранилище<input type="checkbox"></p>
+               <p><input type="button" value="Запросить"></p>
+            </div>
+         </div>
+         <aside>
+            <p><b>Статистика:</b></p>
+            <p>Пользователей: 123</p>
+            <p>Файлов: 1234</p>
+            <p>Объём: 2345мб</p>
+            <p>Объём/ польз: 45 мб</p>
+         </aside>
+      </section>
+      <footer>
+         <div>
+            <b>&#169;2014, EPAM RD PHP Training</b>
+         </div>
+      </footer>
+       
+        <script src="../js/sort.js"></script>
+
+   </body>
+</html>

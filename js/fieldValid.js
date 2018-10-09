@@ -6,27 +6,33 @@ function getFieldVal() {
    mail = document.getElementById("mail").value; 
 }
 
-function check() {
+function validate() {
     getFieldVal();
-    checkPassword();
-    checkMail();
+    if(passwordIsValid() && mailIsValid()) {
+        window.location.replace("pages/customerPage.html");    
+    }
 }
 
-function checkPassword() {
+function passwordIsValid() {
     document.getElementById("errorPasMes").innerHTML = "";
     if(!hasNumber(password)) {
         document.getElementById("errorPasMes").innerHTML = "Пароль должен содержать мере хотя бы одну цыфру";
         document.getElementById('errorPasMes').style.display;
+        return false;
     } else if (!passwordLengthInRange(password)){
         document.getElementById("errorPasMes").innerHTML = "Длина пароля от 8 до 20 мимволов";
         document.getElementById('errorPasMes').style.display;
+        return false;
     } else if (!hasLoverCaseLetter(password)) {
         document.getElementById("errorPasMes").innerHTML = "Пароль должен содержать хотя бы одну букву в нижнем регистре";
         document.getElementById('errorPasMes').style.display;
+        return false;
     } else if (!hasUpperCaseLetter(password)) {
         document.getElementById("errorPasMes").innerHTML = "Пароль должен содержать хотя бы одну букву в вверхнем регистре";
         document.getElementById('errorPasMes').style.display;
+        return false;
     }  
+    return true;
 }
 
 function hasNumber(line) {
@@ -47,12 +53,15 @@ function passwordLengthInRange(line) {
     return line.length >= pasLengthMin && line.length <= pasLengthMax;
 }
 
-function checkMail() {
+function mailIsValid() {
+    mail = mail.trim();
     var mailRexExp = /(?=.*[a-zа-яA-ZА-Я]).{4,20}@.{2,5}[.].*/;
     document.getElementById("errorMail").innerHTML = "";
     if(!mailRexExp.test(mail)) {
         document.getElementById("errorMail").innerHTML = "Проверьте правильность eMail";
         document.getElementById('errorMail').style.display;
+        return false;
     }
+    return true;
 }
 
