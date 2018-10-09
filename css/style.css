@@ -231,3 +231,16 @@ p {
 .link_file:link {
     color: blue;
 }
+
+#errorMail, #errorPasMes {
+    color: red;
+}
+
+#errorMail {
+    display:block;
+}
+
+#errorPasMes {
+    display: block;
+}
+

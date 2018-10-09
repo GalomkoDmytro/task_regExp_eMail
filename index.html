@@ -23,19 +23,26 @@
          </aside>
          <div id="content">
             <!-- loggin form -->
-            <form action="pages/customerPage.html" method="POST">
+            <!-- action="pages/customerPage.html" -->
+           
                <div class="contente_node">
                   <div class="row">
                      <div class="left column">
-                        <p>Логин</p>
+                        <p>Почта</p>
                      </div>
-                     <div class="right column"><input type="text"></div>
+                     <div class="right column">
+                         <input id="mail" type="text" >
+                         <p id="errorMail"></p>
+                      </div>
                   </div>
                   <div class="row">
                      <div class="left column">
                         <p>Пароль</p>
                      </div>
-                     <div class="right column"><input type="password"></div>
+                     <div class="right column">
+                         <input id="passwod" type="password" >
+                         <p id="errorPasMes"></p>                         
+                     </div>
                   </div>
                   <div class="row">
                      <div class="left column">
@@ -50,11 +57,11 @@
                         <p>&nbsp; </p>
                      </div>
                      <div class="right column">
-                        <p><input type="submit" value="Войти"></p>
+                        <p><button onclick="check()">Войти</button></p>
                      </div>
                   </div>
                </div>
-            </form>
+          
             <!-- /loggin form -->
          </div>
          <aside>
@@ -70,5 +77,7 @@
             <b>&#169;2014, EPAM RD PHP Training</b>
          </div>
       </footer>
+       <script src="js/fieldValid.js"></script>
+
    </body>
 </html>
