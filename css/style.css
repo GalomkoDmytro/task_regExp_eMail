@@ -1,0 +1,233 @@
+/* reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff;
+}
+
+/* Style the header */
+header {
+    min-height: 50px;
+    border-bottom: solid 1px black;
+
+}
+
+b {
+    font-weight: bold;
+}
+
+
+/* Create two columns/boxes that floats next to each other */
+
+#content {
+	float: left;
+	width: 50%;
+	height: 100%;
+	background: #fff;
+	padding-right: 20px;
+	padding-left: 20px;
+	border-left: solid 1px black;
+	border-right: solid 1px black;
+}
+
+aside {
+    margin: 0px;
+    padding: 15px;
+	float: left;
+	width: 20%;
+}
+
+section {
+	height: 87%;
+	display: block;
+}
+
+
+/* Clear floats after the columns */
+
+section:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.contente_node {
+	display: block;
+	height: auto;
+	border: solid 1px black;
+	padding: 10px;
+	margin: 10px;
+}
+
+.contente_node input[type=text] {
+    min-width: 78%;
+}
+
+.full_w {
+    width: 100%;
+}
+
+footer {
+	height: 2%;
+	min-height: 20px;
+	width: 100%;
+	text-align: center;
+	border-top: solid 1px black;
+}
+
+.text_right {
+	max-width: 25%;
+	float: left;
+	align-content: right;
+	display: inline-block;
+	height: auto;
+}
+
+.content_left {
+	float: left;
+	align-content: left;
+	display: inline-block;
+	height: auto;
+}
+
+.clear {
+	clear: both;
+}
+
+.left {
+    width: 20%;
+    text-align: right;
+}
+
+.right {
+    width: 50%;
+}
+
+.column {
+    float: left;
+    height: 100%;
+    align-content: center;
+    margin: 2px;
+    vertical-align: center;
+}
+
+.row {
+    width: 100%;
+    height: 100%;
+    align-content: center;
+    vertical-align: middle;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.center {
+    max-width: 50%;
+    margin: auto;
+}
+
+h1 {
+    padding-top: 3%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+header p {
+    align: right;
+}
+
+input[type=button] {
+    min-width: 20%;
+    margin-right: 2px;
+}
+
+#table_div {
+    border: none;
+}
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 2px;
+}
+
+th {
+    border-top: solid 1px gray;
+    border-bottom: solid 1px gray;
+}
+td {
+    border-bottom: solid 1px gray;
+
+}
+
+p {
+    padding: 2px;
+}
+
+.delete {
+    color: red;
+}
+.delete:link {
+    color: red;
+}
+.link_file {
+    color: blue;
+}
+.link_file:link {
+    color: blue;
+}
