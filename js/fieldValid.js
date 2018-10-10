@@ -55,7 +55,7 @@ function passwordLengthInRange(line) {
 
 function mailIsValid() {
     mail = mail.trim();
-    var mailRexExp = /(?=.*[a-zа-яA-ZА-Я]).{4,20}@.{2,5}[.].*/;
+    var mailRexExp = /(?=.*[a-zа-яA-ZА-Я])[a-zа-яA-ZА-Я0-9_.-]{4,20}@.{2,5}[.].*/;
     document.getElementById("errorMail").innerHTML = "";
     if(!mailRexExp.test(mail)) {
         document.getElementById("errorMail").innerHTML = "Проверьте правильность eMail";
